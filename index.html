@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="author" content="Fábio Lopes">
-</head>
-<body>
-
-    <p>Olá Mundo</p>
+  
+  <head>
     
-</body>
-</html>
+    <meta charset="UTF-8">
 
+    <title>My Hero-Based Page</title>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Fábio Lopes">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--  Fonte 1  Glock-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+    <!--  Fonte 2 Ubuntu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--  Fonte 3 Ubuntu ~~~~> font-family: 'Oswald', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles.css">
+
+    <!--  Load javascript file after page loading -->
+    <script defer src="/script.js"></script>
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>My Hero-Based Page</h1>
+    </header>
+
+    <nav>
+      <!-- Create a an element to insert a profile photo -->
+      <img id="profilePicture" src="https://via.placeholder.com/100x100" alt="Profile photo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <button onclick="myFunction()"><i class="fa fa-moon-o"></i></button>
+      </ul>
+    </nav>
+    
+    <main>
+
+      <section class="hero">
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+      </section>
+
+    </section>
+
+    <section class="drums">
+      <div class="drum-machine">
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="stop">Stop</button>
+        <button class="track">Track</button>
+        <button class="reverse">Reverse</button>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

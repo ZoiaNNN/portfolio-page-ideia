@@ -1,0 +1,215 @@
+/* Reset styles for better cross-browser consistency */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Set a default background color and font family */
+body {
+    /*Paralax image*/
+    background-color: #f0f0f0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/800px-Hubble_ultra_deep_field.jpg");
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+}
+
+header {
+    /*Center text*/
+    text-align: center;
+}
+
+/* Style nav   */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /*background-color: #8a8888;*/
+    background-color: #8a8888;
+    opacity: 0.4;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    /*center elements*/
+    justify-content: center;
+    /*make elements size biger*/
+    font-size: 1.5rem;
+    /*space elements*/
+    gap: 20px;
+}
+
+/*make image in nav in the right and shape like a circle*/
+nav img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    /*biger size */
+    font-size: 2rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+/*----------*/
+
+
+/* Style the hero section */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* responsive grid with min width of 300px */
+    grid-gap: 20px;
+    /* add space between grid items */
+    padding: 50px;
+    /*background-color: #ffffff;*/
+    /*opacity: 0.8;*/
+    text-align: center;
+    
+}
+
+/* Style the hero title */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+    /* add transition effect for text color */
+}
+
+/* Style the hero image */
+.hero img {
+    max-width: 100%;
+    padding: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    /* add transition effect for image transformation */
+    
+    /*border-radius: 50%;*/
+}
+
+/* Style the hero paragraph */
+.hero p {
+    font-size: 1.2rem;  
+    
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+    /* add transition effect for text color */
+}
+
+/* Style the hover effect for grid items */
+.hero div:hover {
+    background-color: #bb9999;
+    
+}
+
+
+
+/* Drum Machine*/
+.drums {
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr ;
+    padding: 20px;
+}
+
+.controls { 
+    justify-self: center;
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+
+}
+
+.drum-machine {
+    display: flex;
+    grid-column: 1 / 2;
+    padding: 2px;
+    position: relative;
+    float: inline-start ;
+    justify-content: start;
+    border-radius: 50%;   
+}
+
+.step {    
+    background-color: #d6caca;
+
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+
+    opacity: 0.666;
+}
+
+.step div:hover {
+    background-color: #8e79f6;   
+}
+
+/* -- */
+/* Style the hero section */
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        /* switch to a single column layout */
+        padding: 20px;
+    }
+
+    .hero img {
+        max-width: 80%;
+        /* decrease image size for smaller screens */
+    }
+
+    /* font size of the nav bar */
+    ul {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+        /* decrease font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        /* decrease font size for smaller screens */
+    }
+
+    ul {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 320px) {
+    .hero h1 {
+        font-size: 1.5rem;
+        /* decrease font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+        /* decrease font size for smaller screens */
+    }
+
+    /* font size of the nav bar and element on top verticaly*/
+    ul {
+        font-size: 0.8rem;
+    }
+}

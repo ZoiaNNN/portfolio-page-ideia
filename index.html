@@ -13,7 +13,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/1fb9ec4e5a.js" crossorigin="anonymous"></script>
 
     <!--  Fonte 1  Glock-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,28 +33,39 @@
     
     <link rel="stylesheet" href="/styles.css">
 
-    <!--  Load javascript file after page loading -->
-    <script defer src="/script.js"></script>
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">   
+    
   </head>
   
   <body>
 
     <header>
-      <h1>My Hero-Based Page</h1>
+      
+      <nav>
+        <!-- Create a an element to insert a profile photo -->
+        <img id="profilePicture" src="https://via.placeholder.com/100x100" alt="Profile photo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <i onclick="turnOnDarkMode()" class="fa-solid fa-sun" style="color: #f5c211;"></i>
+          </li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-calculator"></i></span></a></li>
+          
+        </ul>
+        
+      </nav>
     </header>
 
-    <nav>
-      <!-- Create a an element to insert a profile photo -->
-      <img id="profilePicture" src="https://via.placeholder.com/100x100" alt="Profile photo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <button onclick="myFunction()"><i class="fa fa-moon-o"></i></button>
-      </ul>
-    </nav>
-    
     <main>
+
+      <article id="presentation">
+        <h2>Apresentação Pessoal</h2>
+        <p>Olá! Meu nome é [seu nome] e estou estudando [nome do curso]. Escolhi este curso porque [motivações para escolher o curso]. Até agora, tenho gostado muito de aprender sobre [o que mais tem gostado de aprender no curso]. Acredito que minhas principais qualidades são [suas qualidades]. Quando terminar o curso, espero poder trabalhar em [expectativas do que gostaria de fazer após concluir o curso]. Fora dos estudos, gosto de praticar [seus hobbies].</p>
+      </article>
 
       <section class="hero">
         <div>
@@ -73,26 +85,34 @@
           <h1>Hero Title</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
+
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div>
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          <h1>Hero Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
         
       </section>
 
     </section>
-
-    <section class="drums">
-      <div class="drum-machine">
-        <div class="step"></div>
-        <div class="step"></div>
-        <div class="step"></div>
-        <div class="step"></div>
-      </div>
-      <div class="controls">
-        <button class="play">Play</button>
-        <button class="stop">Stop</button>
-        <button class="track">Track</button>
-        <button class="reverse">Reverse</button>
-      </div>
-    </section>
-
-    
+ 
+    <script defer src="/script.js"></script>
   </body>
+
+  <footer>
+    <div id="current-time"></div>
+    <div id="current-date"></div>
+  </footer>
 </html>

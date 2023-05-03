@@ -90,33 +90,26 @@ window.addEventListener('scroll', () => {
     if (window.scrollY < window.innerHeight && window.scrollY > 0) {
         // User is scrolling above the section
         animatedContentArticle.classList.add('show');
+        animatedContentArticle.style.height = "100%";
     }
     else {
         // User has scrolled away from the section
         animatedContentArticle.classList.remove('show');
+        
     }
 
 });
 
 
-/*
-const presentationElement = document.querySelector('#presentation');
-const triggerOffset = window.innerHeight * 0.2;
+//email form 
+document.getElementById("emailForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const to = document.getElementById("to").value;
+    const subject = document.getElementById("subject").value;
+    const body = document.getElementById("body").value;
 
-function showPresentation() {
-  if (window.pageYOffset > triggerOffset) {
-    presentationElement.style.opacity = '1';
-    presentationElement.style.bottom = '0';
-    window.removeEventListener('scroll', showPresentation);
-  }
-}
-
-window.addEventListener('scroll', showPresentation);
-
-*/
-
-
-
+    // send email using the values from the form
+  });
 
 
 

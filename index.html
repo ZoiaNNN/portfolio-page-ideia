@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <title>My Hero-Based Page</title>
+  <title>Portfolio</title>
 
   <meta charset="utf-8">
 
@@ -43,10 +43,10 @@
 
     <nav>
       <!-- Create a an element to insert a profile photo -->
-      <img id="profilePicture" src="https://via.placeholder.com/100x100" alt="Profile photo">
+      <!-- img id="profilePicture" src="https://via.placeholder.com/100x100" alt="Profile photo"-->
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/paginas/sobreMim.html">About</a></li>
         <li><a href="#">Contact</a></li>
         <li>
           <i onclick="turnOnDarkMode()" class="fa-solid fa-sun" style="color: #f5c211;"></i>
@@ -62,7 +62,7 @@
 
     <section class="animated-section">
       <div class="animated-content-article">
-        <img src="image.jpg" alt="Image">
+        <img src="/img/business-woman-in-white-shirt-on-grey-background-free-photo.jpg" alt="Image">
         <article id="presentation">
           <h2>Apresentação Pessoal</h2>
           <p>Olá! Meu nome é [seu nome] e estou estudando [nome do curso]. Escolhi este curso porque [motivações para
@@ -75,35 +75,45 @@
     </section>
 
 
-
     <section class="hero">
+      
+        <div>
+          <a href="/paginas/sobreMim.html">
+            <img src="https://via.placeholder.com/300x200" alt="Hero image">
+          </a>
+          <h1>Sobre mim</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      
       <div>
-        <img src="https://via.placeholder.com/300x200" alt="Hero image">
-        <h1>Hero Title</h1>
+        <a href="/paginas/projetos.html">
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+        </a>
+        <h1>Projetos</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
       <div>
-        <img src="https://via.placeholder.com/300x200" alt="Hero image">
-        <h1>Hero Title</h1>
+        <a href="/paginas/programacaoWeb.html">
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+        </a>
+        <h1>Programação Web </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
       <div>
-        <img src="https://via.placeholder.com/300x200" alt="Hero image">
-        <h1>Hero Title</h1>
+        <a href="/paginas/blog.html">
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+        </a>
+        <h1>Blog</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
       <div>
-        <img src="https://via.placeholder.com/300x200" alt="Hero image">
-        <h1>Hero Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <div>
-        <img src="https://via.placeholder.com/300x200" alt="Hero image">
-        <h1>Hero Title</h1>
+        <a href="/paginas/sobreSite.html">
+          <img src="https://via.placeholder.com/300x200" alt="Hero image">
+        </a>
+        <h1>Sobre este website</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
@@ -121,6 +131,7 @@
 </body>
 
 <footer>
+  <div>Contactos</div>
   <div id="current-time"></div>
   <div id="current-date"></div>
 </footer>

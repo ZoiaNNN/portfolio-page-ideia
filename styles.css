@@ -76,17 +76,18 @@ nav img {
 article {
     /*Center text*/
     text-align: center;
+    
     padding: 15px;
     opacity: 0.4;
-    width: 50vh;
+    width: 25vh;
     margin: 0 auto;
-    width: 50%;
-    height: 10%;
+    width: 25vh;
+    right: 40vh;
     transition: height 0.3s ease-out; 
 }
 
-article p {
-    text-align: left;
+article p , h2{
+    text-align: right;
 }
 
 .animated-content-article {
@@ -109,23 +110,30 @@ article p {
     /* Delay the opacity transition */
 }
 
+
 .animated-content-article.show {
     top: 0;
-    opacity: 0.8;
-    background-color: grey;
+    opacity: 1;
+    /*background-color: rgb(105, 92, 92);*/
 }
 
 
 .animated-content-article img {
-    max-width: 100%;
     height: auto;
+    width: auto;
     margin-bottom: 20px;
+    position: relative;
 }
 
 #presentation h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+#presentation {
+    position: absolute;
+}
+
 
 
 
@@ -183,7 +191,7 @@ article p {
 
 /* Style the hover effect for grid items */
 .hero div:hover {
-    background-color: #bb9999;
+    background-color: #a7a7a7;
 
 }
 

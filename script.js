@@ -91,6 +91,9 @@ window.addEventListener('scroll', () => {
         // User is scrolling above the section
         animatedContentArticle.classList.add('show');
         animatedContentArticle.style.height = "100%";
+        if (window.scrollY > window.innerHeight) {
+            animatedContentArticle.classList.remove('show');
+        }
     }
     else {
         // User has scrolled away from the section

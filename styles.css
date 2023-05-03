@@ -17,6 +17,8 @@ body {
     background-image: url("/img/imgonline-com-ua-Negative-tHz71pIwfjCoXjD.jpg");
     background-size: cover;
     /*background-repeat: no-repeat;*/
+
+    min-height: 200vh;
 }
 
 header {
@@ -142,50 +144,44 @@ h2 {
 /*----------*/
 
 
-
-/* Style the hero section */
+/*ITENS*/
 .hero {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* responsive grid with min width of 300px */
     grid-gap: 20px;
-    /* add space between grid items */
     padding: 50px;
-    /*background-color: #ffffff;*/
-    /*opacity: 0.8;*/
     text-align: center;
-
 }
 
-/* Style the hero title */
+.hero div p {
+    display: none;
+}
+
+.hero div:hover p {
+    display: block;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     transition: color 0.3s ease-in-out;
-    /* add transition effect for text color */
 }
 
-/* Style the hero image */
 .hero img {
-    max-width: 100%;
+    /*max-width: 100%;*/
+    /*height: auto;*/
     padding: 50px;
-    height: auto;
     transition: transform 0.3s ease-in-out;
-    /* add transition effect for image transformation */
-
-    /*border-radius: 50%;*/
+    width: 300px;
+    height: 200px;
 }
 
-/* Style the hero paragraph */
 .hero p {
     font-size: 1.2rem;
-
     margin-bottom: 20px;
     transition: color 0.3s ease-in-out;
-    /* add transition effect for text color */
 }
 
-/* Style the hover effect for grid items */
 .hero div:hover {
     background-color: #a7a7a7;
 
@@ -194,24 +190,40 @@ h2 {
 
 /*FOOTER*/
 footer {
-    /*Center text*/
-    text-align: right;
-    /*background-color: #8a8888;*/
     background-color: #8a8888;
     padding: 15px;
     opacity: 0.4;
 }
 
-#current-date {
+#current-date,
+#current-time {
     /*Center text*/
     text-align: right;
+    padding: 10px;
+}
 
-    /*background-color: #8a8888;*/
+/*------------------------------------*/
+/*Style social media icons footer*/
+
+.socials {
+    display: inline-block;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    
+}
+
+.fa:hover{
+    background-color: #f1f1f1;
 }
 
 /* -- */
-/* Style the hero section */
-
 
 /*--------------*/
 /*--------------*/
@@ -219,8 +231,7 @@ footer {
 /*--------------*/
 /*--------------*/
 
-
-
+/*Style do form email */
 
 input[type="text"],
 textarea {

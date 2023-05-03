@@ -85,7 +85,7 @@ article {
 }
 
 article p,
-h2 {
+article h2 {
     text-align: right;
     width: 50vh;
 }
@@ -216,10 +216,10 @@ footer {
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 8px;
-    
+
 }
 
-.fa:hover{
+.fa:hover {
     background-color: #f1f1f1;
 }
 
@@ -271,6 +271,59 @@ input[type="submit"]:hover {
 
 
 
+/*Style para tabela*/
+table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td,
+th {
+    border: 3px solid #030303;
+    text-align: center;
+    padding: 2px;
+}
+
+#cadeiras_head {
+    text-align: center;
+    padding: 15px;
+}
+
+#cadeiras-h1,
+#cadeiras-h2,
+#cadeiras-h3,
+#cadeiras-h4,
+#cadeiras-h5,
+#cadeiras-h6 {
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+table td:first-child {
+    width: 200px;
+}
+
+table td:nth-child(2) {
+    width: 20px;
+}
+
+table td:nth-child(3) {
+    width: 2px;
+}
+table td:nth-child(4) {
+    width: 30px;
+}
+
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 
 
 /* Media queries for smaller screens */
@@ -332,7 +385,7 @@ input[type="submit"]:hover {
     }
 
     article p,
-    h2 {
+    article h2 {
         text-align: right;
         width: 20vh;
         right: auto;

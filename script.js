@@ -70,6 +70,36 @@ function atualizarHora() {
 setInterval(atualizarHora, 1000);
 
 
+
+
+/*
+const animatedContentArticle = document.querySelector('.animated-content-article');
+
+window.addEventListener('scroll', () => {
+   if (window.scrollY >= window.innerHeight) { // Check if user has scrolled past viewport height
+     animatedContentArticle.classList.add('show'); // Show the animated content article by adding show class
+   } else {
+     animatedContentArticle.classList.remove('show'); // Hide the animated content article by removing show class
+   }
+});
+
+*/
+
+window.addEventListener('scroll', () => {
+    const animatedContentArticle = document.querySelector('.animated-content-article');
+    if (window.scrollY < window.innerHeight && window.scrollY > 0) {
+        // User is scrolling above the section
+        animatedContentArticle.classList.add('show');
+    }
+    else {
+        // User has scrolled away from the section
+        animatedContentArticle.classList.remove('show');
+    }
+
+});
+
+
+/*
 const presentationElement = document.querySelector('#presentation');
 const triggerOffset = window.innerHeight * 0.2;
 
@@ -83,20 +113,7 @@ function showPresentation() {
 
 window.addEventListener('scroll', showPresentation);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
